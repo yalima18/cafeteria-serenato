@@ -1,0 +1,97 @@
+/* Removed invalid HTML <link> tag. Ensure this is added to the HTML file. */
+
+body {
+  --bege: #E6E0D6;
+  --marrom-escuro: #816D4F;
+  --marrom-claro: #B29463;
+  font-family: 'Barlow', 'sans-serif';
+  height: 40000px;
+}
+
+input[type=checkbox]{
+  border: 2px solid var(--marrom-claro);
+  box-shadow: none;
+}
+
+input[type=checkbox]:checked,
+input[type="checkbox"]:focus{
+  background-color: var(--marrom-claro);
+  border-color: var(--marrom-claro);
+  box-shadow: none;
+  outline: none;
+}
+
+.input-range::-webkit-slider-thumb {
+  background-color: var(--marrom-claro);
+}
+
+.banner-1 {
+  background-image: url(./assets/banner-1.png);
+}
+
+.banners {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.banners-titulo {
+  --bs-bg-opacity:.2;
+}
+
+.botao-padrao {
+  background-color: var(--marrom-claro);
+  color: black;
+}
+
+.banner-2 {
+  background-image: url(./assets/banner-2.png);
+}
+
+.banner-3 {
+  background-image: url(./assets/banner-3.png);
+}
+
+.footer-marrom {
+  background-color: var(--marrom-escuro);
+  color: black; /* Para garantir contraste com o texto */
+}
+
+.footer-icon {
+  display: inline-block; /* Faz com que os ícones fiquem em linha */
+  border: none; /* Remove a borda */
+  background: none; /* Remove o fundo */
+  color: black; /* Ajusta a cor para os ícones */
+  padding: 0; /* Remove o espaçamento interno */
+  font-size: 1.5rem; /* Ajusta o tamanho do ícone */
+  margin: 0; /* Remove margens extras */
+}
+
+.footer-icon + .footer-icon {
+  margin-left: 0.5rem; /* Adiciona espaçamento apenas entre os ícones */
+}
+
+.footer-icon:hover {
+  color: var(--marrom-claro); /* Adiciona um efeito de hover */
+}
+
+body[data-bs-theme="dark"] {
+  background-color: #121212; /* Cor de fundo para o modo noturno */
+  color: #ffffff; /* Cor do texto para o modo noturno */
+}
+
+body[data-bs-theme="light"] {
+  background-color: #ffffff; /* Cor de fundo para o modo claro */
+  color: #000000; /* Cor do texto para o modo claro */
+}
+
+.navbar[data-bs-theme="dark"] {
+  background-color: #333333; /* Cor da navbar no modo noturno */
+}
+
+.footer-marrom[data-bs-theme="dark"] {
+  background-color: #222222; /* Cor do footer no modo noturno */
+}
